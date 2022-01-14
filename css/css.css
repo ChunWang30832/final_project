@@ -1,0 +1,38 @@
+
+.registertable{
+    border:1px solid #9bdf70;background:#f0fbeb
+}
+
+.signin {
+    background-color: #1ef4c6;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+.signin:hover {
+    opacity: 1;
+    text-decoration: none; 
+    color: white;
+}
+
+.back {
+    background-color: #1ef4c6;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+  .back:hover {
+    opacity: 1;
+    text-decoration: none; 
+    color: white;
+  }

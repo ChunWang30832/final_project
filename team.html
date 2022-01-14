@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主選單</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+
+<body style="background-image:url(cool.jpg);background-size: cover;background-repeat: no-repeat;background-attachment:fixed;">
+
+    <h1 class="display-4 mb-5" style="font-weight:bold; text-align: center;">Choose a team to join</h1>
+    <div class="container" style="display:flex;padding-left: 150px;">
+        <div class="team">
+            <img style="width:300px;height:300px;background-image:url('cheese.png');" >
+            <p class="signin" onclick="team1()" style="color: black; font-weight: bold;">起司幫</p>
+            <p style="background-color: white;">隊員人數:<span id="t1n">0</span></p>
+        </div>
+
+        <div class="team" style="margin-left:200px">
+            <img  style="width:300px;height:300px;background-image:url('cat.png');" >
+            <p class="signin" onclick="team2()" style="color: black; font-weight: bold;">冠貓幫</p>
+            <p style="background-color: white;">隊員人數:<span id="t2n">0</span></p>
+        </div>
+        
+        
+    </div>
+    <div class="container" style="margin-top:50px;display:flex;padding-left: 150px;">
+        <div class="team">
+            <input  style="width:300px;height:300px;background-image:url('dog.jpg');" >
+            <p class="signin" onclick="team3()" style="color: black; font-weight: bold;">不可以色色幫</p>
+            <p style="background-color: white;">隊員人數:<span id="t3n">0</span></p>
+        </div>
+        <div class="team" style="margin-left:200px;">
+            <input style="width:300px;height:300px;background-image:url('gura.png');" >
+            <p class="signin" onclick="team4()" style="color: black; font-weight: bold;">A</p>
+            <p style="background-color: white;">隊員人數:<span id="t4n">0</span></p>
+        </div>
+        
+    </div>
+
+    <button class="back" onclick="backtomenu()" style="margin-left: 45%;"><span>返回</span></button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+    <!--  Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+    <script src="js/team.js"></script>
+    <!-- <script src="./main.js"></script> -->
+</body>
+
+</html>
