@@ -35,6 +35,7 @@ function signOut() {
 
 
 var rerat = db.collection('rat').doc('record');
+var retotal = db.collection('rat').doc('total');
 var id;
 var st;
 var state = document.getElementById("state");
@@ -61,7 +62,7 @@ st.get().then(doc => {
 
 
 function deleterattotal() {
-    rerat.set({
+    retotal.set({
         total:0,
         
     });
