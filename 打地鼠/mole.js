@@ -90,16 +90,20 @@ window.onload = function () {
             var that = this;
             var db = firebase.firestore();
             var ref = db.collection('rat').doc('record');
+            var reftotal = db.collection('rat').doc('total');
             var scoreboard = document.getElementById("record");
             var count = document.getElementById("total");
             var oldsc;
             var oldtotal;
+            reftotal.get().then(doc => {
+                oldtotal=doc.data().total;
+                count.innerText=String(oldtotal);
+            });
             ref.get().then(doc => {
                 console.log("get old");
                 oldsc= doc.data().sc;
-                oldtotal=doc.data().total;
                 scoreboard.innerText=String(oldsc);
-                count.innerText=String(oldtotal);
+                c
                });
 
             
@@ -112,7 +116,7 @@ window.onload = function () {
                 var newsc=that.score;
                 var newtotal=that.score + oldtotal;
 
-                ref.set({
+                reftotal.set({
                     total:newtotal
                     
                 });
