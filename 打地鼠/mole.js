@@ -41,7 +41,7 @@ window.onload = function () {
         },
 
         /**
-         * 获取给定范围的随机数
+         * 獲取給定範圍的隨機數
          * @param  {Number} from 起始
          * @param  {Number} to   结束
          * @return {Number}      隨機數
@@ -51,7 +51,7 @@ window.onload = function () {
         },
 
         /**
-         * 设置元素内容
+         * 設置元素内容
          * @param  {HTMLElement} elem 要設置的元素
          * @param  {String} val  設置的內容
          * @return {String}      設置好的内容|元素本身的内容
@@ -77,7 +77,7 @@ window.onload = function () {
                     that.mouses[i].style.display = 'none';
                 }
 
-                // 要显示的个数
+                // 要顯示的个数
                 var showNum = that.getRandom(0, 9);
                 for (var i = 0; i < showNum; i++) {
                     that.mouses[that.getRandom(0, 59)].style.display = 'block';
