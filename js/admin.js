@@ -16,22 +16,12 @@ firebase.auth().onAuthStateChanged((user) => {
         // ...
         console.log(user);
     } else {
-        alert("please sign in first!");
         window.location.href = "index.html";
         // User is signed out
     }
 });
 
-function signOut() {
-    // [START auth_sign_out]
-    firebase.auth().signOut().then(() => {
-        window.location.href = "index.html";
-    }).catch((error) => {
-        alert("error");
-      // An error happened.
-    });
-    // [END auth_sign_out]
-  }
+
 
 
 var rerat = db.collection('rat').doc('record');
@@ -59,6 +49,18 @@ st.get().then(doc => {
 //     scoreboard.innerText=String(oldsc);
 //     count.innerText=String(oldtotal);
 //    });
+
+function signOut() {
+    // [START auth_sign_out]
+    firebase.auth().signOut().then(() => {
+        alert("sign out");
+        window.location.href = "index.html";
+    }).catch((error) => {
+        alert("error");
+      // An error happened.
+    });
+    // [END auth_sign_out]
+  }
 
 
 function deleterattotal() {

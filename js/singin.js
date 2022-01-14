@@ -35,6 +35,7 @@ function signInWithEmailPassword() {
       .catch((error) => {
         var errorCode = error.code;
         var errorMessage = error.message;
+        alert("帳號密碼錯誤!")
       });
     // [END auth_signin_password]
   }
